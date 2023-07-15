@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\SWE.Identidade.Api.props" />
+</Project>

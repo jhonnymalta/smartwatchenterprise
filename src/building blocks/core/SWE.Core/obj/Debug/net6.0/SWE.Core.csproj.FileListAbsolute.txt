@@ -1,0 +1,12 @@
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\bin\Debug\net6.0\SWE.Core.deps.json
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\bin\Debug\net6.0\SWE.Core.dll
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\bin\Debug\net6.0\SWE.Core.pdb
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\obj\Debug\net6.0\SWE.Core.csproj.AssemblyReference.cache
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\obj\Debug\net6.0\SWE.Core.GeneratedMSBuildEditorConfig.editorconfig
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\obj\Debug\net6.0\SWE.Core.AssemblyInfoInputs.cache
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\obj\Debug\net6.0\SWE.Core.AssemblyInfo.cs
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\obj\Debug\net6.0\SWE.Core.csproj.CoreCompileInputs.cache
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\obj\Debug\net6.0\SWE.Core.dll
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\obj\Debug\net6.0\refint\SWE.Core.dll
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\obj\Debug\net6.0\SWE.Core.pdb
+A:\DontNetApps\SmartWatchEnterprise\src\building blocks\core\SWE.Core\obj\Debug\net6.0\ref\SWE.Core.dll
