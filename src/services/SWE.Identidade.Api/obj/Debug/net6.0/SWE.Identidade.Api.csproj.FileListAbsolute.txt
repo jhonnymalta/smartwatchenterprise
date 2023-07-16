@@ -66,3 +66,4 @@ A:\DontNetApps\SmartWatchEnterprise\src\services\SWE.Identidade.Api\obj\Debug\ne
 A:\DontNetApps\SmartWatchEnterprise\src\services\SWE.Identidade.Api\obj\Debug\net6.0\SWE.Identidade.Api.pdb
 A:\DontNetApps\SmartWatchEnterprise\src\services\SWE.Identidade.Api\obj\Debug\net6.0\SWE.Identidade.Api.genruntimeconfig.cache
 A:\DontNetApps\SmartWatchEnterprise\src\services\SWE.Identidade.Api\obj\Debug\net6.0\ref\SWE.Identidade.Api.dll
+A:\DontNetApps\SmartWatchEnterprise\src\services\SWE.Identidade.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
