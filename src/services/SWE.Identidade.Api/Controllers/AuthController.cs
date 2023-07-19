@@ -8,12 +8,13 @@ using System.Security.Claims;
 using System.Text;
 using System.Text.RegularExpressions;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Localization;
 
 namespace SWE.Identidade.Api.Controllers
 {
     [ApiController]
     [Route("api/identidade")]
-    public class AuthController : Controller
+    public class AuthController : MainController
     {
 
         private readonly UserManager<IdentityUser> _userManager;
@@ -31,7 +32,7 @@ namespace SWE.Identidade.Api.Controllers
         [HttpPost("nova-conta")]
         public async Task<IActionResult> Registrar(UsuarioRegistro usuarioRegistro)
         {
-            if(!ModelState.IsValid) return BadRequest(ModelState);
+            if(!ModelState.IsValid) return CustomResponse(ModelState);
 
             var user = new IdentityUser
             {
@@ -44,23 +45,33 @@ namespace SWE.Identidade.Api.Controllers
 
             if (result.Succeeded)
             {
-                await _signInManager.SignInAsync(user, isPersistent: false);
-                return Ok(await GerarJwt(usuarioRegistro.Email));
+                return CustomResponse(await GerarJwt(usuarioRegistro.Email));
             }
-            return BadRequest(result);
+            foreach (var error in result.Errors)
+            {
+                AdicionarErroProcessamento(error.Description);
+            }
+
+            return CustomResponse();
         }
         [HttpPost("login")]
         public async Task<IActionResult> Login(UsuarioLogin usuarioLogin)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
             var result =  await _signInManager.PasswordSignInAsync(usuarioLogin.Email, usuarioLogin.Password, isPersistent: false,lockoutOnFailure: true);
 
             if (result.Succeeded)
             {
-                return Ok(await GerarJwt(usuarioLogin.Email));
+                return CustomResponse(await GerarJwt(usuarioLogin.Email));
             }
-            return BadRequest(result);
+            if (result.IsLockedOut)
+            {
+                AdicionarErroProcessamento("Usuário temporariamente bloqueado por tentativas inválidas.");
+                return CustomResponse();
+            }
+            AdicionarErroProcessamento("Usuário ou Senha incorretos.");
+            return CustomResponse();
         }
 
 
