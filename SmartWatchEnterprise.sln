@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F594EBE2-B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWE.Core", "src\building blocks\core\SWE.Core\SWE.Core.csproj", "{CF51E149-E564-4B3A-8E54-C945BFDB3D10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWE.Identidade.Api", "src\services\SWE.Identidade.Api\SWE.Identidade.Api.csproj", "{411AD1EF-71C6-4D30-AAFF-2934D88511BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWE.Identidade.Api", "src\services\SWE.Identidade.Api\SWE.Identidade.Api.csproj", "{411AD1EF-71C6-4D30-AAFF-2934D88511BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWE.Identidade.Web", "src\web\SWE.Identidade.Web\SWE.Identidade.Web.csproj", "{410BB184-672C-48A7-B75C-A0271DF487BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{411AD1EF-71C6-4D30-AAFF-2934D88511BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{411AD1EF-71C6-4D30-AAFF-2934D88511BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{411AD1EF-71C6-4D30-AAFF-2934D88511BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410BB184-672C-48A7-B75C-A0271DF487BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410BB184-672C-48A7-B75C-A0271DF487BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410BB184-672C-48A7-B75C-A0271DF487BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410BB184-672C-48A7-B75C-A0271DF487BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
